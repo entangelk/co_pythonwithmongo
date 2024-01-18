@@ -32,7 +32,7 @@ def Todos(user_id, collection1, collection2):
     print("ToDo List 중 하나 선택 하세요 !")
 
     # todos_list 컬렉션의 내용 중 'title'만 print
-    result_todo = collection1.find({})           # hint 타이틀만 찾기
+    result_todo = collection1.find({})           # hint 타이틀만 찾기 콜렉션 제대로 설정
     count = 1
     for i in result_todo:
         print("{}. {}".format(count, i["title"]), end=" ")           # hint 필요없는 {} 삭제
