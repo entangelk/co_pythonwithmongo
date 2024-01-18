@@ -55,11 +55,11 @@ def Todos(user_id, collection1, collection2):
 
 # 종료 여부 입력 function
 def End(collection, collection1, collection2):           # hint 3개의 콜렉션을 가져올 수 있도록 선언
-    user_id = User_name(collection)
+    user_id = User_name(collection)                        # 누락된 내용 추가
     Todos(user_id, collection1, collection2)
 
     while True:
-        print("c, q, x 중 하나를 입력하세요.")
+        print("c, q, x 중 하나를 입력하세요.")              # 프린트 위치 조절
         user_end = input("진행 여부: ")
         # c 입력 시 Todos() 다시 실행
         if user_end == "c":
